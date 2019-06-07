@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Rust Lang at a Glance - YenTing Chen</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Rust Lang at a Glance" />
+<meta property="og:description" content="Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.
+Rust, borned in 2006, was firstly a personal project but then sponsored by Mozilla since 2009. It’s a compiled language and is known for its compilation time check.
+There are two popular approaches of memory managements in modern programming languages. The first one is you, the developer, explicit allocate and deallocate them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/rust-lang-at-a-glance/" />
+<meta property="article:published_time" content="2019-05-28T23:47:44&#43;08:00"/>
+<meta property="article:modified_time" content="2019-05-28T23:47:44&#43;08:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rust Lang at a Glance"/>
+<meta name="twitter:description" content="Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.
+Rust, borned in 2006, was firstly a personal project but then sponsored by Mozilla since 2009. It’s a compiled language and is known for its compilation time check.
+There are two popular approaches of memory managements in modern programming languages. The first one is you, the developer, explicit allocate and deallocate them."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">YenTing Chen</h1>
+	<div class="site-description"><h2>a.k.a JimYTC</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/jimytc" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/jimytc" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.facebook.com/jim.yenting" title="Facebook"><i data-feather="facebook"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Rust Lang at a Glance</h1>
+			<div class="meta">Posted at &mdash; May 28, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<p>Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.</p>
+
+<p><a href="https://www.rust-lang.org/">Rust</a>, borned in 2006, was firstly a personal project but then sponsored by Mozilla since 2009. It’s a compiled language and is known for its compilation time check.</p>
+
+<p>There are two popular approaches of memory managements in modern programming languages. The first one is you, the developer, explicit allocate and deallocate them. The other is me, the runtime, do all the nasty things for you, which is known for <a href="https://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29">garbage collection (GC)</a>.</p>
+
+<p>As I remember the old days dealing with C programs, I should always remember to free the memory allocated for the use. Not to mention that, I should always be aware of how the memory is passed around. And I met Java, which was firstly attractive to me for it’s ambitious goal, “write once, run anywhere”. That was my first time feel great about coding (and OOP was fascinating to me). Java introduced GC mechanism for the programs. I still remember some mechanisms like <a href="https://www.geeksforgeeks.org/mark-and-sweep-garbage-collection-algorithm/">Mark and Sweep</a>.</p>
+
+<p>Great, I don’t need to worry about memory management anymore. Right? The truth is no. How come? Well, everything has its pros and, of course, its cons. The good news is you don’t need to manually do that, but as your program grows and runs, it’s pretty much easy to see the program is getting slower and slower. And then GC jumps in and says, “dude, I’m doing good for you. Stand aside and wait for me.” Great, now that my program needs to wait. Well, this is not a bad thing though, just a trade-off.</p>
+
+<p>Other than the two approaches, Rust now says you don’t need to do what you do as in C/C++, nor suffer from the GC. Rust uses the concept of “ownership” of value and by leveraging the design, it can do away more than memory management. It could also checks if your code has some potential invalid data, like memory got freed or messed up, during compilation time. This is interesting, but I’m still looking into the more complex scenario than the tutorial samples.</p>
+
+<p>Another interesting thing is no null value. This concepts gets more and more popular these days. For example, Swift and Kotlin both introduce optional. Ruby actually has an optional operator, <code>?.</code>. I’m not sure if Swift and Kotlin is designed with no null. But I’m sure Ruby has <code>nil</code> and <code>?.</code> returns <code>nil</code> if the operand is a <code>nil</code>.</p>
+
+<p>Still looking into it and see if there’s anything to try out with it.</p>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'jimytc-github-io';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

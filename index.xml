@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yenting Chen (a.k.a JimYTC)</title>
+    <title>YenTing Chen</title>
     <link>http://example.org/</link>
-    <description>Recent content on Yenting Chen (a.k.a JimYTC)</description>
+    <description>Recent content on YenTing Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2019 00:54:41 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 23:47:44 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Restart My Blog</title>
-      <link>http://example.org/posts/restart_my_blog/</link>
-      <pubDate>Thu, 06 Jun 2019 00:54:41 +0800</pubDate>
+      <title>Rust Lang at a Glance</title>
+      <link>http://example.org/posts/rust-lang-at-a-glance/</link>
+      <pubDate>Tue, 28 May 2019 23:47:44 +0800</pubDate>
       
-      <guid>http://example.org/posts/restart_my_blog/</guid>
-      <description>It has been a long time to do blogging on Medium. Though I don&amp;rsquo;t have much complaints about it. I still want to try host my own domain rather than on Medium.</description>
+      <guid>http://example.org/posts/rust-lang-at-a-glance/</guid>
+      <description>Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.
+Rust, borned in 2006, was firstly a personal project but then sponsored by Mozilla since 2009. It’s a compiled language and is known for its compilation time check.
+There are two popular approaches of memory managements in modern programming languages. The first one is you, the developer, explicit allocate and deallocate them.</description>
+    </item>
+    
+    <item>
+      <title>You but Not Only You</title>
+      <link>http://example.org/posts/you-but-not-only-you/</link>
+      <pubDate>Mon, 20 May 2019 23:54:49 +0800</pubDate>
+      
+      <guid>http://example.org/posts/you-but-not-only-you/</guid>
+      <description>RailsConf 2019, as a technical conference, there is a bunch of presentations about the fundamentals, deep inside the Rails framework, leveling up the skills. Rather than deep diving into those talks I attended, I would like to share more about DHH and other speakers’ thoughts about the Rails community, the connections within it and the bonds with the world.
+Self-Actualization to Transcendence It’s often to hear a lot of announcements in a tech conference opening keynote, but not in this one.</description>
     </item>
     
   </channel>
