@@ -42,6 +42,28 @@ Self-Actualization to Transcendence It’s often to hear a lot of announcements 
     </item>
     
     <item>
+      <title>Httplog the Useful Tool for Rubyist to Debug Http Request</title>
+      <link>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
+      <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
+      <description>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies. Because of this, we knew a new tool which would be very helpful when debugging outgoing HTTP requests.
+It’s not hard to go with modern HTTP gems. Modern HTTP gems, like faraday and typhoeus, provide developers an efficient, imaginable and readable way to organize the outgoing requests.</description>
+    </item>
+    
+    <item>
+      <title>As a Porter Among Tables in Postgresql</title>
+      <link>http://example.org/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</link>
+      <pubDate>Fri, 25 Mar 2016 16:00:00 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</guid>
+      <description>Imagine we have two tables, creations and creation_metadata. id of creations table is foreign key of creation_metadata table. They should be one-to-one relation but actually, records in creations table might not have a corresponding row in creation_metadata table.
+We want to fix this problem and also move some data from creations table to creation_metadata table.
+Before continuing, let’s make the target clear. What we want is
+ Avoid inserting with existing creation_id in target table.</description>
+    </item>
+    
+    <item>
       <title>Ruby Http Request</title>
       <link>http://example.org/posts/2015/08/05/ruby-http-request/</link>
       <pubDate>Wed, 05 Aug 2015 09:33:11 +0800</pubDate>

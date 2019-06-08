@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL on YenTing Chen</title>
+    <link>http://example.org/tags/postgresql/</link>
+    <description>Recent content in PostgreSQL on YenTing Chen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Mar 2016 16:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>As a Porter Among Tables in Postgresql</title>
+      <link>http://example.org/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</link>
+      <pubDate>Fri, 25 Mar 2016 16:00:00 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</guid>
+      <description>Imagine we have two tables, creations and creation_metadata. id of creations table is foreign key of creation_metadata table. They should be one-to-one relation but actually, records in creations table might not have a corresponding row in creation_metadata table.
+We want to fix this problem and also move some data from creations table to creation_metadata table.
+Before continuing, let’s make the target clear. What we want is
+ Avoid inserting with existing creation_id in target table.</description>
+    </item>
+    
+  </channel>
+</rss>
