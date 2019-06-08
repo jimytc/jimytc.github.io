@@ -13,10 +13,10 @@
     
     <item>
       <title>You but Not Only You</title>
-      <link>http://example.org/posts/you-but-not-only-you/</link>
+      <link>http://example.org/posts/2019/05/20/you-but-not-only-you/</link>
       <pubDate>Mon, 20 May 2019 23:54:49 +0800</pubDate>
       
-      <guid>http://example.org/posts/you-but-not-only-you/</guid>
+      <guid>http://example.org/posts/2019/05/20/you-but-not-only-you/</guid>
       <description>RailsConf 2019, as a technical conference, there is a bunch of presentations about the fundamentals, deep inside the Rails framework, leveling up the skills. Rather than deep diving into those talks I attended, I would like to share more about DHH and other speakers’ thoughts about the Rails community, the connections within it and the bonds with the world.
 Self-Actualization to Transcendence It’s often to hear a lot of announcements in a tech conference opening keynote, but not in this one.</description>
     </item>

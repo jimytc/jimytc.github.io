@@ -47,5 +47,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Ruby</title>
+      <link>http://example.org/tags/ruby/</link>
+      <pubDate>Wed, 05 Aug 2015 09:33:11 +0800</pubDate>
+      
+      <guid>http://example.org/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

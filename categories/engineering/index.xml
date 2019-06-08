@@ -13,10 +13,10 @@
     
     <item>
       <title>Rust Lang at a Glance</title>
-      <link>http://example.org/posts/rust-lang-at-a-glance/</link>
+      <link>http://example.org/posts/2019/05/28/rust-lang-at-a-glance/</link>
       <pubDate>Tue, 28 May 2019 23:47:44 +0800</pubDate>
       
-      <guid>http://example.org/posts/rust-lang-at-a-glance/</guid>
+      <guid>http://example.org/posts/2019/05/28/rust-lang-at-a-glance/</guid>
       <description>Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.
 Rust, borned in 2006, was firstly a personal project but then sponsored by Mozilla since 2009. It’s a compiled language and is known for its compilation time check.
 There are two popular approaches of memory managements in modern programming languages. The first one is you, the developer, explicit allocate and deallocate them.</description>
@@ -24,12 +24,24 @@ There are two popular approaches of memory managements in modern programming lan
     
     <item>
       <title>You but Not Only You</title>
-      <link>http://example.org/posts/you-but-not-only-you/</link>
+      <link>http://example.org/posts/2019/05/20/you-but-not-only-you/</link>
       <pubDate>Mon, 20 May 2019 23:54:49 +0800</pubDate>
       
-      <guid>http://example.org/posts/you-but-not-only-you/</guid>
+      <guid>http://example.org/posts/2019/05/20/you-but-not-only-you/</guid>
       <description>RailsConf 2019, as a technical conference, there is a bunch of presentations about the fundamentals, deep inside the Rails framework, leveling up the skills. Rather than deep diving into those talks I attended, I would like to share more about DHH and other speakers’ thoughts about the Rails community, the connections within it and the bonds with the world.
 Self-Actualization to Transcendence It’s often to hear a lot of announcements in a tech conference opening keynote, but not in this one.</description>
+    </item>
+    
+    <item>
+      <title>Ruby Http Request</title>
+      <link>http://example.org/posts/2015/08/05/ruby-http-request/</link>
+      <pubDate>Wed, 05 Aug 2015 09:33:11 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2015/08/05/ruby-http-request/</guid>
+      <description>During trial on sending GET request to AppFigures’ RESTful API, I started with net/http and add my client key to request hash.
+When firing the request, I have some more request params to use. Because of misunderstanding on how the server deal with params and request header, I added those params into request header and had wrong expectation.
+Code is like below.
+uri = URI(base_url) request = Net::HTTP::Get.new(uri) request.basic_auth(&amp;#39;username&amp;#39;, &amp;#39;password&amp;#39;) request[&amp;#39;X-Client-Key&amp;#39;] = &amp;#39;app_key&amp;#39; if args args.</description>
     </item>
     
   </channel>
