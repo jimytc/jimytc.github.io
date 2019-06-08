@@ -2,23 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>debugging on YenTing Chen</title>
-    <link>http://example.org/tags/debugging/</link>
+    <link>https://www.jimytc.com/tags/debugging/</link>
     <description>Recent content in debugging on YenTing Chen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 13 Aug 2018 15:13:58 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.jimytc.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Httplog the Useful Tool for Rubyist to Debug Http Request</title>
-      <link>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
+      <title>Httplog, the Useful Tool for Rubyist to Debug Http Request</title>
+      <link>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
-      <guid>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
-      <description>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies. Because of this, we knew a new tool which would be very helpful when debugging outgoing HTTP requests.
-It’s not hard to go with modern HTTP gems. Modern HTTP gems, like faraday and typhoeus, provide developers an efficient, imaginable and readable way to organize the outgoing requests.</description>
+      <guid>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
+      <description>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies.</description>
     </item>
     
   </channel>

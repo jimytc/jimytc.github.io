@@ -1,121 +1,300 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Httplog the Useful Tool for Rubyist to Debug Http Request - YenTing Chen</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Httplog the Useful Tool for Rubyist to Debug Http Request" />
-<meta property="og:description" content="Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies. Because of this, we knew a new tool which would be very helpful when debugging outgoing HTTP requests.
-It’s not hard to go with modern HTTP gems. Modern HTTP gems, like faraday and typhoeus, provide developers an efficient, imaginable and readable way to organize the outgoing requests." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/" />
-<meta property="article:published_time" content="2018-08-13T15:13:58&#43;08:00"/>
-<meta property="article:modified_time" content="2018-08-13T15:13:58&#43;08:00"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Httplog the Useful Tool for Rubyist to Debug Http Request"/>
-<meta name="twitter:description" content="Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies. Because of this, we knew a new tool which would be very helpful when debugging outgoing HTTP requests.
-It’s not hard to go with modern HTTP gems. Modern HTTP gems, like faraday and typhoeus, provide developers an efficient, imaginable and readable way to organize the outgoing requests."/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+<html lang="en">
+    
+    
 
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="/js/main.js"></script>
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.55.6" />
+
+    
+    
+    
+
+<title>Httplog, the Useful Tool for Rubyist to Debug Http Request • YenTing Chen</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Httplog, the Useful Tool for Rubyist to Debug Http Request"/>
+<meta name="twitter:description" content="Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies."/>
+
+<meta property="og:title" content="Httplog, the Useful Tool for Rubyist to Debug Http Request" />
+<meta property="og:description" content="Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/" />
+<meta property="article:published_time" content="2018-08-13T15:13:58&#43;08:00"/>
+<meta property="article:modified_time" content="2018-08-13T15:13:58&#43;08:00"/><meta property="og:site_name" content="Software Developer" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.6a83d62c39a364f036df4db1ecd564645635d6c7fc182425cb501218fec485f5.css" integrity="sha256-aoPWLDmjZPA2302x7NVkZFY11sf8GCQly1ASGP7EhfU=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
 </head>
 
-<body>
-	<div class="container wrapper post">
-		<div class="header">
-	<h1 class="site-title">YenTing Chen</h1>
-	<div class="site-description"><h2>a.k.a JimYTC</h2><nav class="nav social">
-			<ul class="flat"><a href="https://github.com/jimytc" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/jimytc" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.facebook.com/jim.yenting" title="Facebook"><i data-feather="facebook"></i></a><a href="https://www.linkedin.com/in/yentingchen/" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
-		</nav>
-	</div>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-			<li>
-				<a href="/">Home</a>
-			</li>
-			
-			<li>
-				<a href="/posts">All posts</a>
-			</li>
-			
-			<li>
-				<a href="/tags">Tags</a>
-			</li>
-			
-			<li>
-				<a href="/about">About</a>
-			</li>
-			
-		</ul>
-	</nav>
+    <body class="theme-base-08 ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.jimytc.com/">YenTing Chen</a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://www.jimytc.com/images/author-logo.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+         a.k.a. JimYTC 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">YenTing Chen</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		
+		</li>
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimytc" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://facebook.com/jim.yenting" rel="me"><i class="fab fa-facebook-f"></i></a>
+	
+	
+	<a href="https://github.com/jimytc" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://instagram.com/jimytc" rel="me"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://linkedin.com/in/yentingchen" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/jimytc" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2019 jimytc
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
 </div>
 
 
-		<div class="post-header">
-			<h1 class="title">Httplog the Useful Tool for Rubyist to Debug Http Request</h1>
-			<div class="meta">Posted at &mdash; Aug 13, 2018</div>
-		</div>
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
 
-		<div class="markdown">
-			
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Httplog, the Useful Tool for Rubyist to Debug Http Request</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Aug 13, 2018
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/engineering">ENGINEERING</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/ruby">ruby</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/http-request">http request</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/debugging">debugging</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    
 
 <p>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies. Because of this, we knew a new tool which would be very helpful when debugging outgoing HTTP requests.</p>
 
 <h2 id="it-s-not-hard-to-go-with-modern-http-gems">It’s not hard to go with modern HTTP gems.</h2>
 
 <p>Modern HTTP gems, like faraday and typhoeus, provide developers an efficient, imaginable and readable way to organize the outgoing requests. Most of them accept an parameter to enable the verbose logging. For example,</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">require <span style="color:#a31515">&#39;typhoeus&#39;</span>
-Typhoeus.get(<span style="color:#a31515">&#34;http://google.com&#34;</span>, <span style="color:#a31515">verbose</span>: <span style="color:#00f">true</span>)</code></pre></div>
+
+<pre><code class="language-ruby">require 'typhoeus'
+Typhoeus.get(&quot;http://google.com&quot;, verbose: true)
+</code></pre>
+
 <p>However, when we were dealing with our migration task, the issue was not about which parameter to pass for verbose logging. It was that we knew we did something wrong and we wanted to compare the low level log with another working gem to spot the mistake. But we could not control the options used by the gem so we could not get the log. Forking the code was not an option because it was too complicated then.</p>
 
 <p>Fortunately, Ruby community already had the gem, <a href="https://github.com/trusche/httplog"><code>httplog</code></a> for logging the requests to the screen. So let&rsquo;s start to use it. Here are what we did.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#008000"># Add it to Gemfile</span>
-gem <span style="color:#a31515">&#39;httplog&#39;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#008000"># Install the gem</span>
-$ bundle install</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#008000"># Configure HttpLog to capture the detail we want to know.</span>
 
-HttpLog.configure <span style="color:#00f">do</span> |config|
+<pre><code class="language-ruby"># Add it to Gemfile
+gem 'httplog'
+</code></pre>
 
-  <span style="color:#008000"># Enable or disable all logging</span>
-  config.enabled = <span style="color:#00f">true</span>
+<pre><code class="language-sh"># Install the gem
+$ bundle install
+</code></pre>
 
-  <span style="color:#008000"># You can assign a different logger</span>
+<pre><code class="language-ruby"># Configure HttpLog to capture the detail we want to know.
+
+HttpLog.configure do |config|
+
+  # Enable or disable all logging
+  config.enabled = true
+
+  # You can assign a different logger
   config.logger = Logger.new($stdout)
 
-  <span style="color:#008000"># I really wouldn&#39;t change this...</span>
+  # I really wouldn't change this...
   config.severity = Logger::Severity::DEBUG
 
-  <span style="color:#008000"># Tweak which parts of the HTTP cycle to log...</span>
-  config.log_connect   = <span style="color:#00f">true</span>
-  config.log_request   = <span style="color:#00f">true</span>
-  config.log_headers   = <span style="color:#00f">true</span>
-  config.log_data      = <span style="color:#00f">true</span>
-  config.log_response  = <span style="color:#00f">false</span>
-<span style="color:#00f">end</span></code></pre></div>
+  # Tweak which parts of the HTTP cycle to log...
+  config.log_connect   = true
+  config.log_request   = true
+  config.log_headers   = true
+  config.log_data      = true
+  config.log_response  = false
+end
+</code></pre>
+
 <p>That’s it and once we fire the request. You’ll see things like below.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">irb(main):023:0&gt; uri = URI(<span style="color:#a31515">&#39;http://www.google.com&#39;</span>)
-=&gt; <span style="color:#008000">#&lt;URI::HTTP http://www.google.com&gt;</span>
+
+<pre><code class="language-ruby">irb(main):023:0&gt; uri = URI('http://www.google.com')
+=&gt; #&lt;URI::HTTP http://www.google.com&gt;
 irb(main):059:0&gt; Net::HTTP.get(uri)
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.030400 <span style="color:#008000">#19738] DEBUG -- : [httplog] Connecting: www.google.com:80</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.055285 <span style="color:#008000">#19738] DEBUG -- : [httplog] Sending: GET http://www.google.com:80/</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.055377 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: accept-encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.055412 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: accept: */*</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.055579 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: user-agent: Ruby</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.055605 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: host: www.google.com</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.055646 <span style="color:#008000">#19738] DEBUG -- : [httplog] Data:</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100233 <span style="color:#008000">#19738] DEBUG -- : [httplog] Status: 200</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100333 <span style="color:#008000">#19738] DEBUG -- : [httplog] Benchmark: 0.044534 seconds</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100388 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: date: Mon, 13 Aug 2018 14:33:30 GMT</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100418 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: expires: -1</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100444 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: cache-control: private, max-age=0</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100468 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: content-type: text/html; charset=ISO-8859-1</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100493 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: p3p: CP=&#34;This is not a P3P policy! See g.co/p3phelp for more info.&#34;</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100519 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: server: gws</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100552 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: content-length: 4737</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100581 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: x-xss-protection: 1; mode=block</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100604 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: x-frame-options: SAMEORIGIN</span>
-D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100630 <span style="color:#008000">#19738] DEBUG -- : [httplog] Header: set-cookie: 1P_JAR=2018-08-13-14; expires=Wed, 12-Sep-2018 14:33:30 GMT; path=/; domain=.google.com, NID=136=NTCQz6wtmZFAJy87eM1aMSbPvW9UVRvSnQVkk5OtJyzIcAtKOmdj2ZFClqZyeURx0VbRdmSIuReGqUE8yCAuExogWjl54i5KfhX0M4LVOb6gDo6f7YJZ4iVXIo2AU9we; expires=Tue, 12-Feb-2019 14:33:30 GMT; path=/; domain=.google.com; HttpOnly</span></code></pre></div>
+D, [2018-08-13T22:33:30.030400 #19738] DEBUG -- : [httplog] Connecting: www.google.com:80
+D, [2018-08-13T22:33:30.055285 #19738] DEBUG -- : [httplog] Sending: GET http://www.google.com:80/
+D, [2018-08-13T22:33:30.055377 #19738] DEBUG -- : [httplog] Header: accept-encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+D, [2018-08-13T22:33:30.055412 #19738] DEBUG -- : [httplog] Header: accept: */*
+D, [2018-08-13T22:33:30.055579 #19738] DEBUG -- : [httplog] Header: user-agent: Ruby
+D, [2018-08-13T22:33:30.055605 #19738] DEBUG -- : [httplog] Header: host: www.google.com
+D, [2018-08-13T22:33:30.055646 #19738] DEBUG -- : [httplog] Data:
+D, [2018-08-13T22:33:30.100233 #19738] DEBUG -- : [httplog] Status: 200
+D, [2018-08-13T22:33:30.100333 #19738] DEBUG -- : [httplog] Benchmark: 0.044534 seconds
+D, [2018-08-13T22:33:30.100388 #19738] DEBUG -- : [httplog] Header: date: Mon, 13 Aug 2018 14:33:30 GMT
+D, [2018-08-13T22:33:30.100418 #19738] DEBUG -- : [httplog] Header: expires: -1
+D, [2018-08-13T22:33:30.100444 #19738] DEBUG -- : [httplog] Header: cache-control: private, max-age=0
+D, [2018-08-13T22:33:30.100468 #19738] DEBUG -- : [httplog] Header: content-type: text/html; charset=ISO-8859-1
+D, [2018-08-13T22:33:30.100493 #19738] DEBUG -- : [httplog] Header: p3p: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+D, [2018-08-13T22:33:30.100519 #19738] DEBUG -- : [httplog] Header: server: gws
+D, [2018-08-13T22:33:30.100552 #19738] DEBUG -- : [httplog] Header: content-length: 4737
+D, [2018-08-13T22:33:30.100581 #19738] DEBUG -- : [httplog] Header: x-xss-protection: 1; mode=block
+D, [2018-08-13T22:33:30.100604 #19738] DEBUG -- : [httplog] Header: x-frame-options: SAMEORIGIN
+D, [2018-08-13T22:33:30.100630 #19738] DEBUG -- : [httplog] Header: set-cookie: 1P_JAR=2018-08-13-14; expires=Wed, 12-Sep-2018 14:33:30 GMT; path=/; domain=.google.com, NID=136=NTCQz6wtmZFAJy87eM1aMSbPvW9UVRvSnQVkk5OtJyzIcAtKOmdj2ZFClqZyeURx0VbRdmSIuReGqUE8yCAuExogWjl54i5KfhX0M4LVOb6gDo6f7YJZ4iVXIo2AU9we; expires=Tue, 12-Feb-2019 14:33:30 GMT; path=/; domain=.google.com; HttpOnly
+</code></pre>
+
 <p>With <a href="https://github.com/trusche/httplog"><code>httplog</code></a> gem, we finally spot the mistake we made and resolve the issue. Case closed!</p>
 
 <h3 id="many-thanks-to-the-community">Many thanks to the community!</h3>
@@ -135,29 +314,101 @@ D, [2018-08-13<span style="color:#a31515">T22</span>:33:30.100630 <span style="c
 <li><a href="https://github.com/lostisland/faraday">faraday</a></li>
 </ul>
 
-		</div><div id="disqus_thread"></div>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">As a Porter Among Tables in Postgresql</span>
+    </a>
+    
+    
+    <a href="/posts/2019/05/20/you-but-not-only-you/" class="navigation-next">
+      <span class="navigation-tittle">You but Not Only You</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
 <script type="text/javascript">
-	(function () {
-		
-		
-		if (window.location.hostname == "localhost")
-			return;
+    
 
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		var disqus_shortname = 'jimytc-github-io';
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'jimytc-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-		Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
-	</nav>
-</div>
 
-</body>
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-9646591-7', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
 </html>

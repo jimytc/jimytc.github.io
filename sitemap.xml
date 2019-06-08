@@ -3,122 +3,122 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://www.jimytc.com/about/</loc>
     <lastmod>2019-06-06T17:04:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://www.jimytc.com/</loc>
     <lastmod>2019-06-06T17:04:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://www.jimytc.com/categories/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://www.jimytc.com/posts/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/programming-language/</loc>
+    <loc>https://www.jimytc.com/tags/programming-language/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/rust/</loc>
+    <loc>https://www.jimytc.com/tags/rust/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/2019/05/28/rust-lang-at-a-glance/</loc>
+    <loc>https://www.jimytc.com/posts/2019/05/28/rust-lang-at-a-glance/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2019-05-28T23:47:44+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/categories/engineering/</loc>
+    <loc>https://www.jimytc.com/tags/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/rails/</loc>
+    <loc>https://www.jimytc.com/categories/engineering/</loc>
+    <lastmod>2019-05-28T23:47:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/tags/rails/</loc>
     <lastmod>2019-05-20T23:54:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ruby-on-rails/</loc>
+    <loc>https://www.jimytc.com/tags/ruby-on-rails/</loc>
     <lastmod>2019-05-20T23:54:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/2019/05/20/you-but-not-only-you/</loc>
+    <loc>https://www.jimytc.com/posts/2019/05/20/you-but-not-only-you/</loc>
     <lastmod>2019-05-20T23:54:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</loc>
+    <loc>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</loc>
     <lastmod>2018-08-13T15:13:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ruby/</loc>
-    <lastmod>2018-08-13T15:13:58+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/debugging/</loc>
+    <loc>https://www.jimytc.com/tags/ruby/</loc>
     <lastmod>2018-08-13T15:13:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/http-request/</loc>
+    <loc>https://www.jimytc.com/tags/debugging/</loc>
     <lastmod>2018-08-13T15:13:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</loc>
+    <loc>https://www.jimytc.com/tags/http-request/</loc>
+    <lastmod>2018-08-13T15:13:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/database/</loc>
+    <loc>https://www.jimytc.com/tags/database/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/postgresql/</loc>
+    <loc>https://www.jimytc.com/tags/postgresql/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/sql/</loc>
+    <loc>https://www.jimytc.com/tags/sql/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/2015/08/05/ruby-http-request/</loc>
+    <loc>https://www.jimytc.com/posts/2015/08/05/ruby-http-request/</loc>
     <lastmod>2015-08-05T09:33:11+08:00</lastmod>
   </url>
   

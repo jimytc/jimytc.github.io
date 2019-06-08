@@ -2,35 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on YenTing Chen</title>
-    <link>http://example.org/tags/ruby/</link>
+    <link>https://www.jimytc.com/tags/ruby/</link>
     <description>Recent content in Ruby on YenTing Chen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 13 Aug 2018 15:13:58 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.jimytc.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Httplog the Useful Tool for Rubyist to Debug Http Request</title>
-      <link>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
+      <title>Httplog, the Useful Tool for Rubyist to Debug Http Request</title>
+      <link>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
-      <guid>http://example.org/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
-      <description>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies. Because of this, we knew a new tool which would be very helpful when debugging outgoing HTTP requests.
-It’s not hard to go with modern HTTP gems. Modern HTTP gems, like faraday and typhoeus, provide developers an efficient, imaginable and readable way to organize the outgoing requests.</description>
+      <guid>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
+      <description>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies.</description>
     </item>
     
     <item>
       <title>Ruby Http Request</title>
-      <link>http://example.org/posts/2015/08/05/ruby-http-request/</link>
+      <link>https://www.jimytc.com/posts/2015/08/05/ruby-http-request/</link>
       <pubDate>Wed, 05 Aug 2015 09:33:11 +0800</pubDate>
       
-      <guid>http://example.org/posts/2015/08/05/ruby-http-request/</guid>
+      <guid>https://www.jimytc.com/posts/2015/08/05/ruby-http-request/</guid>
       <description>During trial on sending GET request to AppFigures’ RESTful API, I started with net/http and add my client key to request hash.
-When firing the request, I have some more request params to use. Because of misunderstanding on how the server deal with params and request header, I added those params into request header and had wrong expectation.
-Code is like below.
-uri = URI(base_url) request = Net::HTTP::Get.new(uri) request.basic_auth(&amp;#39;username&amp;#39;, &amp;#39;password&amp;#39;) request[&amp;#39;X-Client-Key&amp;#39;] = &amp;#39;app_key&amp;#39; if args args.</description>
+When firing the request, I have some more request params to use.</description>
     </item>
     
   </channel>
