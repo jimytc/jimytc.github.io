@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PostgreSQL on Jim Chen</title>
-    <link>https://jimytc.com/tags/postgresql/</link>
+    <link>https://www.jimytc.com/tags/postgresql/</link>
     <description>Recent content in PostgreSQL on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Mar 2016 16:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://jimytc.com/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.jimytc.com/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>As a Porter Among Tables in Postgresql</title>
-      <link>https://jimytc.com/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</link>
+      <link>https://www.jimytc.com/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</link>
       <pubDate>Fri, 25 Mar 2016 16:00:00 +0800</pubDate>
       
-      <guid>https://jimytc.com/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</guid>
+      <guid>https://www.jimytc.com/posts/2016/03/25/as-a-porter-among-tables-in-postgresql/</guid>
       <description>Imagine we have two tables, creations and creation_metadata. id of creations table is foreign key of creation_metadata table. They should be one-to-one relation but actually, records in creations table might not have a corresponding row in creation_metadata table.</description>
     </item>
     
