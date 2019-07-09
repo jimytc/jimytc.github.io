@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on YenTing Chen</title>
+    <title>Tags on Jim Chen</title>
     <link>https://jimytc.com/tags/</link>
-    <description>Recent content in Tags on YenTing Chen</description>
+    <description>Recent content in Tags on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 May 2019 23:47:44 +0800</lastBuildDate>
@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>Ruby</title>
+      <link>https://jimytc.com/tags/ruby/</link>
+      <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
+      
+      <guid>https://jimytc.com/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>debugging</title>
       <link>https://jimytc.com/tags/debugging/</link>
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
@@ -62,15 +71,6 @@
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
       <guid>https://jimytc.com/tags/http-request/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ruby</title>
-      <link>https://jimytc.com/tags/ruby/</link>
-      <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
-      
-      <guid>https://jimytc.com/tags/ruby/</guid>
       <description></description>
     </item>
     
