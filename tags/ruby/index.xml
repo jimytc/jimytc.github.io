@@ -6,10 +6,19 @@
     <description>Recent content in ruby on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Aug 2018 15:13:58 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2019 09:12:13 +0800</lastBuildDate>
     
 	<atom:link href="https://www.jimytc.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test Cases Like How We Speak</title>
+      <link>https://www.jimytc.com/posts/2019/08/06/test_cases_like_how_we_speak/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/posts/2019/08/06/test_cases_like_how_we_speak/</guid>
+      <description>In my current software development work, we&amp;rsquo;ve talked about TDD within the team but we haven&amp;rsquo;t really apply this process for couple reasons. But we do care about the products we shipped.</description>
+    </item>
     
     <item>
       <title>Httplog, the Useful Tool for Rubyist to Debug Http Request</title>

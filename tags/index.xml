@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 May 2019 23:47:44 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2019 09:12:13 +0800</lastBuildDate>
     
 	<atom:link href="https://www.jimytc.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>agile development</title>
+      <link>https://www.jimytc.com/tags/agile-development/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/agile-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://www.jimytc.com/tags/ruby/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tdd</title>
+      <link>https://www.jimytc.com/tags/tdd/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test driven development</title>
+      <link>https://www.jimytc.com/tags/test-driven-development/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/test-driven-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unit test</title>
+      <link>https://www.jimytc.com/tags/unit-test/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/unit-test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Programming Language</title>
@@ -62,15 +107,6 @@
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
       <guid>https://www.jimytc.com/tags/http-request/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ruby</title>
-      <link>https://www.jimytc.com/tags/ruby/</link>
-      <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
-      
-      <guid>https://www.jimytc.com/tags/ruby/</guid>
       <description></description>
     </item>
     
