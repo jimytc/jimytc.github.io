@@ -21,6 +21,12 @@
   </url>
   
   <url>
+    <loc>https://www.jimytc.com/tags/ruby/</loc>
+    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.jimytc.com/tags/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
     <priority>0</priority>
@@ -39,12 +45,6 @@
   
   <url>
     <loc>https://www.jimytc.com/categories/engineering/</loc>
-    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jimytc.com/tags/ruby/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
     <priority>0</priority>
   </url>
