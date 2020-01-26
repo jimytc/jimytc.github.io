@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jim Chen</title>
@@ -6,17 +6,44 @@
     <description>Recent content in Tags on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Aug 2019 09:12:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 21:43:46 +0800</lastBuildDate>
     
 	<atom:link href="https://www.jimytc.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ruby</title>
-      <link>https://www.jimytc.com/tags/ruby/</link>
-      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      <title>audible</title>
+      <link>https://www.jimytc.com/tags/audible/</link>
+      <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/ruby/</guid>
+      <guid>https://www.jimytc.com/tags/audible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learn</title>
+      <link>https://www.jimytc.com/tags/learn/</link>
+      <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>listening</title>
+      <link>https://www.jimytc.com/tags/listening/</link>
+      <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/listening/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podcast</title>
+      <link>https://www.jimytc.com/tags/podcast/</link>
+      <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/podcast/</guid>
       <description></description>
     </item>
     
@@ -26,6 +53,15 @@
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
       <guid>https://www.jimytc.com/tags/agile-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://www.jimytc.com/tags/ruby/</link>
+      <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
+      
+      <guid>https://www.jimytc.com/tags/ruby/</guid>
       <description></description>
     </item>
     

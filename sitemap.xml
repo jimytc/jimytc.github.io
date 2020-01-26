@@ -1,35 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.jimytc.com/tags/audible/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.jimytc.com/categories/</loc>
-    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/</loc>
-    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/tags/learn/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/tags/listening/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/tags/podcast/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/posts/2020/01/26/podcasts_i_subscribed/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/posts/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/tags/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/categories/thoughts/</loc>
+    <lastmod>2020-01-26T21:43:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/tags/agile-development/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/categories/engineering/</loc>
+    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/ruby/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.jimytc.com/tags/</loc>
+    <loc>https://www.jimytc.com/tags/tdd/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -38,33 +78,13 @@
   </url>
   
   <url>
-    <loc>https://www.jimytc.com/tags/agile-development/</loc>
-    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jimytc.com/categories/engineering/</loc>
-    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jimytc.com/tags/tdd/</loc>
-    <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.jimytc.com/tags/test-driven-development/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/unit-test/</loc>
     <lastmod>2019-08-06T09:12:13+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -75,13 +95,11 @@
   <url>
     <loc>https://www.jimytc.com/tags/programming-language/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/rust/</loc>
     <lastmod>2019-05-28T23:47:44+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -92,13 +110,11 @@
   <url>
     <loc>https://www.jimytc.com/tags/rails/</loc>
     <lastmod>2019-05-20T23:54:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/ruby-on-rails/</loc>
     <lastmod>2019-05-20T23:54:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -107,20 +123,18 @@
   </url>
   
   <url>
-    <loc>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</loc>
-    <lastmod>2018-08-13T15:13:58+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.jimytc.com/tags/debugging/</loc>
     <lastmod>2018-08-13T15:13:58+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/http-request/</loc>
     <lastmod>2018-08-13T15:13:58+08:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</loc>
+    <lastmod>2018-08-13T15:13:58+08:00</lastmod>
   </url>
   
   <url>
@@ -131,19 +145,16 @@
   <url>
     <loc>https://www.jimytc.com/tags/database/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/postgresql/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.jimytc.com/tags/sql/</loc>
     <lastmod>2016-03-25T16:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
