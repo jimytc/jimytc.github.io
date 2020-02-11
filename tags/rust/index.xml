@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Jim Chen</title>
-    <link>https://www.jimytc.com/tags/rust/</link>
+    <link>https://jimytc.com/tags/rust/</link>
     <description>Recent content in Rust on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 May 2019 23:47:44 +0800</lastBuildDate>
     
-	<atom:link href="https://www.jimytc.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimytc.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rust Lang at a Glance</title>
-      <link>https://www.jimytc.com/posts/2019/05/28/rust-lang-at-a-glance/</link>
+      <link>https://jimytc.com/posts/2019/05/28/rust-lang-at-a-glance/</link>
       <pubDate>Tue, 28 May 2019 23:47:44 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/posts/2019/05/28/rust-lang-at-a-glance/</guid>
+      <guid>https://jimytc.com/posts/2019/05/28/rust-lang-at-a-glance/</guid>
       <description>Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.
 Rust, borned in 2006, was firstly a personal project but then sponsored by Mozilla since 2009.</description>
     </item>

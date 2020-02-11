@@ -2,174 +2,174 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jim Chen</title>
-    <link>https://www.jimytc.com/tags/</link>
+    <link>https://jimytc.com/tags/</link>
     <description>Recent content in Tags on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Jan 2020 21:43:46 +0800</lastBuildDate>
     
-	<atom:link href="https://www.jimytc.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimytc.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>audible</title>
-      <link>https://www.jimytc.com/tags/audible/</link>
+      <link>https://jimytc.com/tags/audible/</link>
       <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/audible/</guid>
+      <guid>https://jimytc.com/tags/audible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>learn</title>
-      <link>https://www.jimytc.com/tags/learn/</link>
+      <link>https://jimytc.com/tags/learn/</link>
       <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/learn/</guid>
+      <guid>https://jimytc.com/tags/learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>listening</title>
-      <link>https://www.jimytc.com/tags/listening/</link>
+      <link>https://jimytc.com/tags/listening/</link>
       <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/listening/</guid>
+      <guid>https://jimytc.com/tags/listening/</guid>
       <description></description>
     </item>
     
     <item>
       <title>podcast</title>
-      <link>https://www.jimytc.com/tags/podcast/</link>
+      <link>https://jimytc.com/tags/podcast/</link>
       <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/podcast/</guid>
+      <guid>https://jimytc.com/tags/podcast/</guid>
       <description></description>
     </item>
     
     <item>
       <title>agile development</title>
-      <link>https://www.jimytc.com/tags/agile-development/</link>
+      <link>https://jimytc.com/tags/agile-development/</link>
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/agile-development/</guid>
+      <guid>https://jimytc.com/tags/agile-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>https://www.jimytc.com/tags/ruby/</link>
+      <link>https://jimytc.com/tags/ruby/</link>
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/ruby/</guid>
+      <guid>https://jimytc.com/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tdd</title>
-      <link>https://www.jimytc.com/tags/tdd/</link>
+      <link>https://jimytc.com/tags/tdd/</link>
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/tdd/</guid>
+      <guid>https://jimytc.com/tags/tdd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test driven development</title>
-      <link>https://www.jimytc.com/tags/test-driven-development/</link>
+      <link>https://jimytc.com/tags/test-driven-development/</link>
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/test-driven-development/</guid>
+      <guid>https://jimytc.com/tags/test-driven-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>unit test</title>
-      <link>https://www.jimytc.com/tags/unit-test/</link>
+      <link>https://jimytc.com/tags/unit-test/</link>
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/unit-test/</guid>
+      <guid>https://jimytc.com/tags/unit-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming Language</title>
-      <link>https://www.jimytc.com/tags/programming-language/</link>
+      <link>https://jimytc.com/tags/programming-language/</link>
       <pubDate>Tue, 28 May 2019 23:47:44 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/programming-language/</guid>
+      <guid>https://jimytc.com/tags/programming-language/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rust</title>
-      <link>https://www.jimytc.com/tags/rust/</link>
+      <link>https://jimytc.com/tags/rust/</link>
       <pubDate>Tue, 28 May 2019 23:47:44 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/rust/</guid>
+      <guid>https://jimytc.com/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rails</title>
-      <link>https://www.jimytc.com/tags/rails/</link>
+      <link>https://jimytc.com/tags/rails/</link>
       <pubDate>Mon, 20 May 2019 23:54:49 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/rails/</guid>
+      <guid>https://jimytc.com/tags/rails/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby on Rails</title>
-      <link>https://www.jimytc.com/tags/ruby-on-rails/</link>
+      <link>https://jimytc.com/tags/ruby-on-rails/</link>
       <pubDate>Mon, 20 May 2019 23:54:49 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/ruby-on-rails/</guid>
+      <guid>https://jimytc.com/tags/ruby-on-rails/</guid>
       <description></description>
     </item>
     
     <item>
       <title>debugging</title>
-      <link>https://www.jimytc.com/tags/debugging/</link>
+      <link>https://jimytc.com/tags/debugging/</link>
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/debugging/</guid>
+      <guid>https://jimytc.com/tags/debugging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>http request</title>
-      <link>https://www.jimytc.com/tags/http-request/</link>
+      <link>https://jimytc.com/tags/http-request/</link>
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/http-request/</guid>
+      <guid>https://jimytc.com/tags/http-request/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Database</title>
-      <link>https://www.jimytc.com/tags/database/</link>
+      <link>https://jimytc.com/tags/database/</link>
       <pubDate>Fri, 25 Mar 2016 16:00:00 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/database/</guid>
+      <guid>https://jimytc.com/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PostgreSQL</title>
-      <link>https://www.jimytc.com/tags/postgresql/</link>
+      <link>https://jimytc.com/tags/postgresql/</link>
       <pubDate>Fri, 25 Mar 2016 16:00:00 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/postgresql/</guid>
+      <guid>https://jimytc.com/tags/postgresql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SQL</title>
-      <link>https://www.jimytc.com/tags/sql/</link>
+      <link>https://jimytc.com/tags/sql/</link>
       <pubDate>Fri, 25 Mar 2016 16:00:00 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/tags/sql/</guid>
+      <guid>https://jimytc.com/tags/sql/</guid>
       <description></description>
     </item>
     

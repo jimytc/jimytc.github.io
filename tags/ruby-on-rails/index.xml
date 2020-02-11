@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Rails on Jim Chen</title>
-    <link>https://www.jimytc.com/tags/ruby-on-rails/</link>
+    <link>https://jimytc.com/tags/ruby-on-rails/</link>
     <description>Recent content in Ruby on Rails on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 20 May 2019 23:54:49 +0800</lastBuildDate>
     
-	<atom:link href="https://www.jimytc.com/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimytc.com/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>You but Not Only You</title>
-      <link>https://www.jimytc.com/posts/2019/05/20/you-but-not-only-you/</link>
+      <link>https://jimytc.com/posts/2019/05/20/you-but-not-only-you/</link>
       <pubDate>Mon, 20 May 2019 23:54:49 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/posts/2019/05/20/you-but-not-only-you/</guid>
+      <guid>https://jimytc.com/posts/2019/05/20/you-but-not-only-you/</guid>
       <description>RailsConf 2019, as a technical conference, there is a bunch of presentations about the fundamentals, deep inside the Rails framework, leveling up the skills. Rather than deep diving into those talks I attended, I would like to share more about DHH and other speakers’ thoughts about the Rails community, the connections within it and the bonds with the world.</description>
     </item>
     

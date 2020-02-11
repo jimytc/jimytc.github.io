@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Jim Chen</title>
-    <link>https://www.jimytc.com/tags/ruby/</link>
+    <link>https://jimytc.com/tags/ruby/</link>
     <description>Recent content in Ruby on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Aug 2019 09:12:13 +0800</lastBuildDate>
     
-	<atom:link href="https://www.jimytc.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimytc.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Test Cases Like How We Speak</title>
-      <link>https://www.jimytc.com/posts/2019/08/06/test_cases_like_how_we_speak/</link>
+      <link>https://jimytc.com/posts/2019/08/06/test_cases_like_how_we_speak/</link>
       <pubDate>Tue, 06 Aug 2019 09:12:13 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/posts/2019/08/06/test_cases_like_how_we_speak/</guid>
+      <guid>https://jimytc.com/posts/2019/08/06/test_cases_like_how_we_speak/</guid>
       <description>In my current software development work, we&amp;rsquo;ve talked about TDD within the team but we haven&amp;rsquo;t really apply this process for couple reasons. But we do care about the products we shipped.</description>
     </item>
     
     <item>
       <title>Httplog, the Useful Tool for Rubyist to Debug Http Request</title>
-      <link>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
+      <link>https://jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</link>
       <pubDate>Mon, 13 Aug 2018 15:13:58 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
+      <guid>https://jimytc.com/posts/2018/08/13/httplog-the-useful-tool-for-rubyist-to-debug-http-request/</guid>
       <description>Our application introduced “Sharing to Twitter” feature and we did our own integration with Twitter API. We maintained the integration by ourselves because we did not want to introduce too many dependencies.</description>
     </item>
     
     <item>
       <title>Ruby Http Request</title>
-      <link>https://www.jimytc.com/posts/2015/08/05/ruby-http-request/</link>
+      <link>https://jimytc.com/posts/2015/08/05/ruby-http-request/</link>
       <pubDate>Wed, 05 Aug 2015 09:33:11 +0800</pubDate>
       
-      <guid>https://www.jimytc.com/posts/2015/08/05/ruby-http-request/</guid>
+      <guid>https://jimytc.com/posts/2015/08/05/ruby-http-request/</guid>
       <description>During trial on sending GET request to AppFigures’ RESTful API, I started with net/http and add my client key to request hash.
 When firing the request, I have some more request params to use.</description>
     </item>
