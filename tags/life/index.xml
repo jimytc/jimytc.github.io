@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thoughts on Jim Chen</title>
-    <link>https://jimytc.com/categories/thoughts/</link>
-    <description>Recent content in thoughts on Jim Chen</description>
+    <title>life on Jim Chen</title>
+    <link>https://jimytc.com/tags/life/</link>
+    <description>Recent content in life on Jim Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 11 Feb 2020 12:09:28 +0800</lastBuildDate>
     
-	<atom:link href="https://jimytc.com/categories/thoughts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimytc.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,15 +23,6 @@
 新的篇章 到了這個年歲才比較掌握到自己應該多放點心在怎麼做，而不是做什麼，畢竟即便目標眾多，但也都是很清楚明瞭。2020年二月，我轉換到另一個團隊讓自己能夠更加專心的在我要走的路，而且客觀條件上，這個機會都更能夠滿足我對未來生活的想像。
 離開原本的團隊也是很不捨，特別是對幾個被我推坑很深的夥伴，希望我挖的坑不會害你們爬不出來啊！話說回來，這是我人生中的一個新篇章，卻不是我們友誼故事的結束，未來保持連絡囉。
 2020 專業、影響力、自信 2020年一月在商業思維學院的線下實作課程中完成了今年的目標設定，老實說，那個目標絕對是挑戰自己極限的，這樣也好，總是要跨出舒適圈。 希望 2021 年的時候回顧，我可以很肯定地說，我可以幫自己打上 專業、影響力、自信 這三個標籤，同時，在個人發展上，成為一個 有影響力的後端軟體工程師。</description>
-    </item>
-    
-    <item>
-      <title>Podcasts I subscribed</title>
-      <link>https://jimytc.com/posts/2020/01/26/podcasts_i_subscribed/</link>
-      <pubDate>Sun, 26 Jan 2020 21:43:46 +0800</pubDate>
-      
-      <guid>https://jimytc.com/posts/2020/01/26/podcasts_i_subscribed/</guid>
-      <description>My friends and I happened to have a conversation about subscribed podcasts for communication, collaboration and engineering. We shared some with each other and I think it&amp;rsquo;s worth writing a post about them.</description>
     </item>
     
   </channel>
