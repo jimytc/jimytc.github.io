@@ -39,7 +39,7 @@ in
           <span style=color:#66d9ef>deploy_key</span>: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           <span style=color:#66d9ef>external_repository</span>: jimytc/jimytc.github.io <span style=color:#75715e># &lt;- 改成你自己的 user github page</span>
           <span style=color:#66d9ef>publish_dir</span>: ./public <span style=color:#75715e># &lt;- 指定編譯後的成品放置的資料夾</span>
-          <span style=color:#66d9ef>publish_branch</span>: master <span style=color:#75715e># &lt;- 遠端 repo 的目標分之</span>
+          <span style=color:#66d9ef>publish_branch</span>: master <span style=color:#75715e># &lt;- 遠端 repo 的目標分支</span>
 </code></pre></div><h2 id=感想>感想</h2><ul><li>其實滿有趣的，GitHub Action 目前看起來挺方便的，但是一些設定的部分還是有一點隱藏。</li><li>透過設定和引用社群開發的功能，基本上就能達到想要的目的。</li><li>如果找不到合用的，可以寫自己的 Action。</li><li>其實可以把它拿來跑單元測試。</li><li>目前還沒看到可以拿來編譯 MacOS/iOS/iPadOS 的 Action，希望之後會有。</li></ul><blockquote><p>這篇更新後也是透過 GitHub Action 編譯和部署的喔！</p></blockquote></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(location.hostname==="localhost"||location.hostname==="127.0.0.1"||location.hostname===""){return;}
 var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;var disqus_shortname='jimytc-github-io';dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the
 <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by
