@@ -3,7 +3,7 @@
 <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></div><div class=builtwith>Built with <a href=https://gohugo.io>Hugo</a> ❤️ <a href=https://github.com/htr3n/hyde-hyde>hyde-hyde</a>.</div></div></div><div class="content container"><div class=post-list><div class=post-list__item><span class=item__title--big><a href=/posts/2021/03/27/qnote_on_using_type_predicates/>Typescript Array.map 後的型別推論技巧 - type predicate</a></span>
 <span class=item__date>Mar 27, 2021</span>
 <span>在集合或陣列類型的資料處理中，偶爾會遇到需要使用 Array.map 把所需要的資料從物件中轉化成另一個陣列物件。 例如
-class Foo { bar?: number } let foos: Foo[]; fooArray = [ new Foo(123), new Foo() ]; let bars = foos.map(f => f.bar) 在 tsconfig.json 中開啟 "strict": true 或者 "strictNullChecks": true 的情形下。 bars 會被推論成是 (number | undefined)[]。</span>
+class Foo { bar?: number constructor(bar?: number) { this.bar = bar; } } let foos: Foo[]; fooArray = [ new Foo(123), new Foo() ]; let bars = foos.</span>
 ... <a class=read-more-symbol href=/posts/2021/03/27/qnote_on_using_type_predicates/>➦</a></div><div class=post-list__item><span class=item__title--big><a href=/posts/2021/02/05/qnote_on_adapting_typescript/>TypeScript 上手二三事</a></span>
 <span class=item__date>Feb 5, 2021</span>
 <span>經歷過 Java, Ruby, JavaScript(咦?)，最近因為職涯的轉換開始上手 TypeScript。 簡單說 TypeScript 就是 JavaScript 的超集，最大的好處是加強了型別系統。 上手的過程使用了 91 (Joey Chen) 極速開發帶領的 Tennis Kata 練習。
