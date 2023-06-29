@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>testing on Jim Chen</title><link>https://jimytc.com/tags/testing/</link><description>Recent content in testing on Jim Chen</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 23 Feb 2020 23:58:40 +0800</lastBuildDate><atom:link href="https://jimytc.com/tags/testing/index.xml" rel="self" type="application/rss+xml"/><item><title>[閱讀筆記] 單元測試的藝術 Part II</title><link>https://jimytc.com/posts/2020/02/23/reading_notes_unit_testing_part_two/</link><pubDate>Sun, 23 Feb 2020 23:58:40 +0800</pubDate><guid>https://jimytc.com/posts/2020/02/23/reading_notes_unit_testing_part_two/</guid><description>單元測試的藝術 - 核心技術篇 (Ch3 - Ch6) 回顧 工作單元的可見最終結果有三。
 有回傳值。 系統可見的狀態或行為改變。 呼叫不受測試控制的第三方系統。 測試的種類
 單元測試 整合測試 (New) 互動測試 互動測試－ 針對物件如何向其他物件發送訊息的測試。用於測試工作單元的最終結果是與其他系統互動的時候，例如，發送 Log。
-測試的藝術在於 在合適的地方加入或使用一個中介層封裝原本的呼叫行為，藉此可以模擬中介層行為進而測試工作單元。 測試程式面臨的挑戰 受測單元的外部依賴（External Dependency） 無法控制的外部依賴會造成“抑制測試”的現象。</description></item><item><title>[閱讀筆記] 單元測試的藝術 Part I</title><link>https://jimytc.com/posts/2020/02/23/reading_notes_unit_testing_part_one/</link><pubDate>Sun, 23 Feb 2020 23:58:24 +0800</pubDate><guid>https://jimytc.com/posts/2020/02/23/reading_notes_unit_testing_part_one/</guid><description>單元測試的藝術 - 入門篇 (Ch1 &amp;amp; Ch2) 定義們 被測試系統 SUT（System Under Test） 被測試程式所測試的對象，可以是函數，可以是類別，可以是一個複雜的元件，也可以是一個軟體。 一般來說
+測試的藝術在於 在合適的地方加入或使用一個中介層封裝原本的呼叫行為，藉此可以模擬中介層行為進而測試工作單元。 測試程式面臨的挑戰 受測單元的外部依賴（External Dependency） 無法控制的外部依賴會造成“抑制測試”的現象。
+抑制測試（test-inhibiting）— 當程式碼依賴於某個外部資源，即使邏輯是完全正確的，但這種依賴仍可能造成測試失敗。
+例如，當工作單元的行爲是需要讀取系統中的設定檔案或者網路服務來決定。
+測試時常用到的技術 Fake 假物件 假物件是通用名詞，可能會是 Stub 也可能會是 Mock，依照使用情境會有相對應的行為。</description></item><item><title>[閱讀筆記] 單元測試的藝術 Part I</title><link>https://jimytc.com/posts/2020/02/23/reading_notes_unit_testing_part_one/</link><pubDate>Sun, 23 Feb 2020 23:58:24 +0800</pubDate><guid>https://jimytc.com/posts/2020/02/23/reading_notes_unit_testing_part_one/</guid><description>單元測試的藝術 - 入門篇 (Ch1 &amp;amp; Ch2) 定義們 被測試系統 SUT（System Under Test） 被測試程式所測試的對象，可以是函數，可以是類別，可以是一個複雜的元件，也可以是一個軟體。 一般來說
 工作單元、使用案例 Use Case 從呼叫系統的一個公開方法，到產生一個測試可見最終結果，在期間這個系統所發生的行為統稱為一個工作單元。
 可見的最終結果可以是
-回傳值（如果公開方法有回傳值的話） 系統可見的狀態或行為改變，不需要查詢私有狀態就能取得。 呼叫一個不受測試所控制的第三方系統，這個第三方系統不回傳任何值或者回傳值不被系統使用。 單元測試 Unit Test 一個單元測試是一段自動化的程式碼，這段程式會呼叫被測試的工作單元，之後對這個單元的最終結果的某些假設或期望進行驗證。</description></item></channel></rss>
+回傳值（如果公開方法有回傳值的話） 系統可見的狀態或行為改變，不需要查詢私有狀態就能取得。 呼叫一個不受測試所控制的第三方系統，這個第三方系統不回傳任何值或者回傳值不被系統使用。 單元測試 Unit Test 一個單元測試是一段自動化的程式碼，這段程式會呼叫被測試的工作單元，之後對這個單元的最終結果的某些假設或期望進行驗證。
+特質
+執行起來快速。可靠、易讀、並且很容易維護。只要產品程式碼不發生變化，單元測試的執行結果是穩定一致的。
+自動化的，且可以被重複執行的。 容易被實現。 到第二天還有存在意義，非臨時性的。 任何人都可以按個按鈕執行它。 執行速度很快。 執行結果一致。 應該要能完全掌控受測單元。 完全被隔離的，獨立於其他測試。 如果執行結果失敗，能夠簡單清楚的呈現期望為何以及發生問題的原因在哪。 整合測試 Integration Test 對一個工作單元進行測試，而這個測試對被測試的單元並沒有完全的控制，而是使用該單元一個或多個真實依賴的相依物件，例如時間、網路、資料庫、執行緒或亂數產生器等等。</description></item></channel></rss>

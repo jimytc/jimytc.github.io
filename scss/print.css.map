@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "print.css",
-	"sourceRoot": "/Users/jimytc/work/repos/blogging-with-hugo",
+	"sourceRoot": "/home/runner/work/blogging-with-hugo/blogging-with-hugo",
 	"sources": [
 		"themes/hyde-hyde/assets/scss/print.scss",
 		"themes/hyde-hyde/assets/scss/hyde-hyde/_variables.scss",
